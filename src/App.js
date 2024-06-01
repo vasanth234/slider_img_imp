@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ImageSlider from './ImageSlider';
 
-function App() {
+const App = () => {
+  const images = [
+    'https://fastly.picsum.photos/id/433/200/300.jpg?hmac=Y75_deyseM49Q8smDAbeRflgTmOchUngpd-QeDllW0g',
+    'https://fastly.picsum.photos/id/912/250/350.jpg?hmac=RRZvBRsCQL8540A_HEr6U6_5FiJb0SbvbZB9Y6d_aTE',
+    'https://fastly.picsum.photos/id/417/300/400.jpg?hmac=2OCajg2UWtaEd9UIWuikmHapzZCeaFZbjI7RPVkQlSA',
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      
+      <ImageSlider images={images} />
     </div>
   );
-}
+};
 
 export default App;

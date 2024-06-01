@@ -1,0 +1,37 @@
+/* imageslider.css */
+.image-slider {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+  
+  .text {
+    margin-bottom: 20px;
+  }
+  
+  .Contain-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  button:hover {
+    background-color: #ae2828;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px; /* Adjust as needed */
+  }
+  
